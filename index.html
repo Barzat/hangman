@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="info">Угадай слово загаданное внизу</div>
+    <input type="text" placeholder="Пиши букву" />
+    <button style="display: none">Еще раз?</button>
+    <div class="word"></div>
+    <div class="hangman"></div>
+    <span style="position: absolute; bottom: 10px; left: 10px">
+      <div class="guessesLeft">
+        Попыток осталось:<span class="bold">10</span>
+      </div>
+      <div class="guessed">Неправильне буквы: <span class="bold"></span></div>
+    </span>
+    <span
+      style="position: absolute; bottom: 10px; right: 10px; text-align: right"
+    >
+      <div>Подряд: <span class="streak bold">0</span></div>
+      <div>Средний балл: <span class="score bold">-</span></div>
+    </span>
+    <script src="./script.js"></script>
+  </body>
+</html>
